@@ -1,0 +1,389 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* Common Style */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+    position: relative;
+    font-family: 'Poppins';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.container {
+    width: 870px;
+    position: relative;
+    margin: 50px auto;
+}
+
+.container-header {
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 10%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*====================
+   header style start
+====================*/
+
+.header {
+    height: 670px;
+    background-color: #2D25A0;
+}
+
+.nav-btn .fas {
+    opacity: 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.header-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    margin: 0 165px;
+}
+
+.half-width {
+    width: 100%;
+    margin-top: 120px;
+}
+
+.half-width h1 {
+    color: #fff;
+    font-size: 65px;
+}
+
+.half-width img {
+    width: 100%;
+}
+
+.half-width .button {
+    margin-top: 20px;
+}
+
+.half-width .button .fas {
+    margin-left: 10px;
+}
+
+.half-width .button:hover a {
+    background-color: #fff;
+    color: #2D25A0;
+    transform: translateX(50px);
+}
+
+.half-width img:hover {
+    color: #2D25A0;
+    transition-duration: 2s;
+    transform: rotate(15deg) translateX(-150px);
+}
+
+.button {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.button .fas {
+    margin-right: 10px;
+}
+
+/*====================
+   header style end
+====================*/
+
+/*====================
+   player style start
+====================*/
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    margin: 25px auto;
+}
+
+.player {
+    position: relative;
+    margin: auto 20px;
+    box-shadow: 0px 2px 18px #1e14a78f;
+    padding: 10px 2;
+    border-radius: 10px;
+}
+
+.player-img {
+    width: 92%;
+}
+
+.player img {
+    width: 100%;
+    margin: 4% 4% auto 4%;
+    display: inline-block;
+}
+
+.player-details {
+    width: 92%;
+    margin: 2% 4% 10% 4%;
+}
+
+.player-details h2 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #18191F;
+    margin-bottom: 10px;
+}
+
+.player-details p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+
+/*====================
+   player style end
+====================*/
+
+.subscribe-section {
+    background-color: #2418c173;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 90px;
+}
+
+#subscribe {
+    height: 300px;
+}
+
+#subscribe h6 {
+    color: rgb(0, 0, 0);
+}
+
+.subscribe-info {
+    font-size: x-large;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.subscribe-form-control {
+    display: block;
+    width: 70%;
+    padding: 8px 50px;
+    font-size: 15px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.subscribe-button {
+    text-decoration: none;
+    background-color: orange;
+    padding: 7px 15px;
+    border-radius: 30px;
+    background-image: linear-gradient(orange, tomato);
+    color: white;
+    font-weight: 700;
+}
+
+.contact-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-section-info {
+    text-align: center;
+    background-color: rgba(205, 242, 228, 0.878);
+    width: 700px;
+    height: 220px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.button-googlemap {
+    text-decoration: none;
+    background-color: #4081EC;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    padding: 17px 40px;
+}
+
+/*====================
+   fotter style start
+====================*/
+
+.fotter {
+    text-align: center;
+}
+
+.fotter-header {
+    display: inline-block;
+    margin-left: 50%;
+    transform: translate(-60%);
+}
+
+.fotter-logo {
+    width: 92%;
+}
+
+.fotter-logo img {
+    width: 100%;
+    margin: 4% 4% auto 4%;
+    display: inline-block;
+}
+
+.fotter-icon {
+    display: inline-block;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.fotter-icon .fab {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: #414141;
+    background-color: #bdbdbd;
+    margin: 0 15px 20px;
+    padding: 15px;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.copyright {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.fotter-icon .fab:nth-child(1):hover {
+    color: #fff;
+    background-color: #4267B2;
+}
+
+.fotter-icon .fab:nth-child(2):hover {
+    color: #fff;
+    background-color: #E1306C;
+}
+
+.fotter-icon .fab:nth-child(3):hover {
+    color: #fff;
+    background-color: #1DA1F2;
+}
+
+.fotter-icon .fab:nth-child(4):hover {
+    color: #fff;
+    background-color: #ff0000;
+}
+
+/*====================
+   fotter style start
+====================*/
+
+/*====================
+   Media query start
+====================*/
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 90%;
+        margin-bottom: -120px;
+    }
+    /* header */
+    .header-info {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px;
+        margin: 0px;
+    }
+    .half-width .header-info {
+        display: inline-block;
+        margin: 4% 4% auto 4%;
+    }
+    .header {
+        height: 500px;
+        background-color: #2D25A0;
+    }
+    .half-width {
+        margin: 0 auto;
+        width: 75%;
+    }
+    .half-width h1 {
+        font-size: 35px;
+    }
+    /* player section  */
+    .players {
+        position: relative;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+    .subscribe-section {
+        /* padding: 15px; */
+        border-radius: 5%;
+        /* height: 200px; */
+    }
+    .contact-section {
+        /* margin-top: 90px; */
+        margin-bottom: -120px;
+        padding: 0;
+    }
+    .contact-section-div {
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .button-whatsapp {
+        border-radius: 30px;
+        font-weight: 400;
+        padding: 9px 10px;
+    }
+    .contact-section-info {
+        width: auto;
+        /* height: 220px; */
+        margin-top: 90px;
+        padding: 50px;
+    }
+    /* fotter */
+    .fotter {
+        margin-top: -90px;
+    }
+    .fotter-icon .fab {
+        width: 10px;
+        height: 10px;
+        font-size: 10px;
+        margin: 0 5px 20px;
+        padding: 8px;
+    }
+    .copyright {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+}
